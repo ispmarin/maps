@@ -9,6 +9,9 @@ I'm investigating the possible solutions for mapping in Python. The requirements
 - A good interface with pandas 
 - Map interaction with time variable
 
+Interesting discussion:
+https://news.ycombinator.com/item?id=6604785
+http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html
 ## Folium
 [Folium](https://github.com/python-visualization/folium/) is a Python interface for the [Leaflet](https://github.com/Leaflet/Leaflet) Javascript map library. 
 
@@ -17,6 +20,7 @@ I'm investigating the possible solutions for mapping in Python. The requirements
 - There is no [offline](https://github.com/python-visualization/folium/issues/351) option for the moment (every redraw calls the tile API)
 - Supports markers, points, lines, polylines and floaters
 - Can scale, depending only on the tiles available
+- Has a nice gallery with jupyter notebooks as [examples](http://nbviewer.jupyter.org/github/ocefpaf/folium_notebooks/tree/master/)
 
 ## Plotly
 [Plotly](https://github.com/plotly/plotly.py) was a closed source, server-based general plotting library that has been open sourced recently.
@@ -32,3 +36,6 @@ So plotly is a no go.
 ## Basemap
 TODO
 
+## Cartopy
+
+- Needs shapely 1.5.2, otherwise fails
