@@ -10,8 +10,10 @@ I'm investigating the possible solutions for mapping in Python. The requirements
 - Map interaction with time variable
 
 Interesting discussion:
-https://news.ycombinator.com/item?id=6604785
-http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html
+
+- https://news.ycombinator.com/item?id=6604785
+- http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html
+
 ## Folium
 [Folium](https://github.com/python-visualization/folium/) is a Python interface for the [Leaflet](https://github.com/Leaflet/Leaflet) Javascript map library. 
 
@@ -34,8 +36,17 @@ http://sensitivecities.com/so-youd-like-to-make-a-map-using-python-EN.html
 So plotly is a no go.
 
 ## Basemap
-TODO
+
 
 ## Cartopy
+[Cartopy](https://github.com/SciTools/cartopy) is a static cartographic library based on Matplotlib. 
 
-- Needs shapely 1.5.2, otherwise fails
+- Needs shapely < 1.5.12, otherwise fails
+- Static maps, no interaction
+- Can use several tile providers or no tiles at all
+- Can read shapefiles
+- Uses shapely
+- Matplotlib integration makes easier to use (if you know matplotlib, that is)
+- Supports markers, points, lines, polylines
+- Can cache the tiles and maps, plots are static by default
+
