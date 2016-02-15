@@ -33,10 +33,9 @@ Interesting discussion:
 - Supports markers, points, lines
 - [Cannot scale](https://github.com/plotly/plotly.js/issues/249) the underlying tiles
 
-So plotly is a no go.
 
 ## Basemap
-
+ **TODO**
 
 ## Cartopy
 [Cartopy](https://github.com/SciTools/cartopy) is a static cartographic library based on Matplotlib. 
@@ -50,3 +49,5 @@ So plotly is a no go.
 - Supports markers, points, lines, polylines
 - Can cache the tiles and maps, plots are static by default
 
+## But why not use <insert technology here>?
+Several plotting tools are using a Javascript backend to do the plotting, like Plotly and Folium. Why not use directly Javascript? So far, the main reason is that our stack is mostly Python and the platforms where the data is coming from is messy. Python is the glue that we use to hide the several backend data sources, so having Python is a reasonable choice for now. 
