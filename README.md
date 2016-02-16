@@ -35,7 +35,14 @@ Interesting discussion:
 
 
 ## Basemap
- **TODO**
+[Basemap](https://github.com/matplotlib/basemap/) is a [Matplotlib](https://github.com/matplotlib/) extension for mapping and cartography.
+
+- Is based on matplotlib, so again, if you are familiar with Matplotlib is quite easy to adapt
+- Is static, no interactivity
+- Kinda complicated to install (no pip package easily available)
+- Can scale and has high resolution maps
+- Very flexible with cartographic settings
+- Probably will not be maintained in the [long term](https://github.com/matplotlib/basemap/issues/191) (Cartopy is suggested as a possible replacement)
 
 ## Cartopy
 [Cartopy](https://github.com/SciTools/cartopy) is a static cartographic library based on Matplotlib. 
